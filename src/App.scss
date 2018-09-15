@@ -1,13 +1,33 @@
 body {
-  font-family: sans-serif;
+	color: white;
 }
-footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	background: #efefef;
-	padding: 5px 0;
+a {
+	color: white !important;
 }
+
+h2 {
+	margin: 40px;
+}
+
 .AppLoader {
 	text-align: center;
+}
+
+.App {
+	background-image: url(./assets/stars.gif);
+	width: 100vw;
+	height: 100vh;
+}
+
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.centerTitle {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;	
 }
