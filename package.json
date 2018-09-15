@@ -1,7 +1,7 @@
 {
   "name": "cra-boilerplate",
   "version": "1.0.3",
-  "homepage": ".",
+  "homepage": "https://AlfredOdling.github.io/databasteknik-labb-1",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "gh-pages": "^1.2.0",
