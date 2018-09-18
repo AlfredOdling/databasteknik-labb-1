@@ -23,6 +23,8 @@ class MessageBoard extends React.Component {
 		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
 		var expires = "expires=" + d.toUTCString();
 		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+
+		this.setState({ msg: this.getCookie('msg') })
 	}
 
 	getCookie(cname) {
@@ -42,7 +44,7 @@ class MessageBoard extends React.Component {
 	}
 
 	render() {
-		let msg = this.getCookie('msg')
+		const { value, msg } = this.state
 
 		return (
 			<div>
@@ -50,7 +52,7 @@ class MessageBoard extends React.Component {
 					<label>
 						<input
 							type="text"
-							value={this.state.value}
+							value={value}
 							onChange={e => this.handleChange(e)} />
 					</label>
 					<input type="submit" value="Submit" />
